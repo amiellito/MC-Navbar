@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="style1.css"> -->
+  <!-- <link rel="stylesheet" href="style2.css"> -->
+  <link id="pagestyle" rel="stylesheet" type="text/css" href="style3.css">
+  <title>Navigation</title>
+
+
+  <script type="text/javascript">
+  
+  function swapStyleSheet(sheet){
+    document.getElementById('pagestyle').setAttribute('href', sheet)
+  }
+  
+  </script>
+
+</head>
+
+
+<!-- Build <header>, <img class=logo>, <nav>, <ul class="navlinks">, <li>, <button> with contact  -->
+  
+  <header>
+    <img class="logo" src="images/logo.svg" alt="logo" alt="">
+    <nav>
+      <ul class="nav_links">
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+    <a class="cta" href="#"><button>Contact</button></a>
+  </header>
+  <main>
+    <button onclick="swapStyleSheet('style1.css')">Style 1</button>
+    <button onclick="swapStyleSheet('style2.css')">Style 2</button>
+    <button onclick="swapStyleSheet('style3.css')">Style 3</button>
+  </main>
+
+</body>
+</html>
